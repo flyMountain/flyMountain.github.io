@@ -15,6 +15,7 @@ MVC 有称Model View Controller 是软件的常用架构之一  这里View指的
 具体到Android项目中MVC是怎样执行的那？从上面可知MVC的各个组成部分代表Android项目中的文件，当我们按下一个按键（Button）去执行下载任务，按键在View层中（布局文件）然后通过Controller层 Activity button.setOnClickListener()这个函数 然后再去调用Model层中的下载程序  
 在这里我们已经有MVC可为什么还需要MVP模式那？从上面的分析我们可以知道view层就是一个xml文件，如果你想动态的改变一个背景图，改变一个图标的颜色 这时候都必须通过Activity实现，这就造成了Activity的代码会变的冗长，难以维护。还有一个重要原因就是在上图中我们可以知道Model和View层是相互的，可以知道MVC的耦合性太高 不利于大型项目  
 
+### MVP
 这里就产生了MVP模式，MVC作为MVP的演化解决了MVC的两个缺点，MVP模式中M指的是Model
 V指的是View P指的是Presenter    
 * View 对应于Activity，负责View的绘制以及与用户交互
